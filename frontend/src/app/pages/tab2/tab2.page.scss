@@ -1,0 +1,46 @@
+* {
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ion-item{
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.my-label {
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //font-size: 4em;
+  }
+
+  
+.indicator-container{
+    padding-left: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+.event-indicator{
+    background: var(--ion-color-success);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    display: table-cell;
+}
+
+.with-event{
+    //background-color: #4fac97 ;
+    border-radius: 0px;
+}
+
+:host ::ng-deep{
+    .monthview-primary-with-event{
+    //background-color: white !important;
+    }
+
+    .monthview-selected{
+        //background-color: #4fac97 ;        
+    }
+
+
+}

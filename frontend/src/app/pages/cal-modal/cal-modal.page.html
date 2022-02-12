@@ -1,0 +1,97 @@
+<ion-header>
+  
+  <ion-toolbar color="primary">
+    
+    <ion-title > Actividad </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="close()">
+        <ion-icon name="close" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>{{ tipoActividad }}</ion-card-subtitle>
+      <ion-card-title>{{ actividad }}</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      
+      {{ descripcion }}
+      <br>
+      <br>
+      
+      <!-- Fase Lunar-->
+      <ion-row>
+        <ion-col size="5">
+          <b> Fase Lunar</b>
+        </ion-col>
+        <ion-col size="7">
+          Luna Llena
+        </ion-col>
+        
+      </ion-row>
+
+      <!-- Fecha Óptima-->
+      <ion-row>
+        <ion-col size="5">
+          <b> Fecha Óptima </b>
+        </ion-col>
+        <ion-col size="7">
+          {{ fechaoptima }}
+        </ion-col>
+      </ion-row>
+
+      <!-- Época-->
+      <ion-row>
+        <ion-col size="5">
+          <b> Época </b>
+        </ion-col>
+        <ion-col size="7">
+          {{ nombreEpoca }}
+        </ion-col>
+      </ion-row>
+
+      <!-- Tiempo-->
+      <ion-row>
+        <ion-col size="5">
+          <b> Tiempo </b>
+        </ion-col>
+        <ion-col size="7">
+          {{ nombreTiempo }}
+        </ion-col>
+      </ion-row>
+
+      <!-- Ciclo Arbol-->
+      <ion-row>
+        <ion-col size="5">
+          <b> Ciclo de Vida del Arbol </b>
+        </ion-col>
+        <ion-col size="7">
+          {{ nombreCicloArbol }}
+        </ion-col>
+      </ion-row>
+
+      <!-- Cambio del Sol -->
+      <ion-row>
+        <ion-col size="5">
+          <b> Cambio de sol </b>
+        </ion-col>
+        <ion-col size="7">
+          {{ nombreCambio }}
+        </ion-col>
+      </ion-row>
+
+
+    </ion-card-content>
+  </ion-card>
+
+  
+</ion-content>
